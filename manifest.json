@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ReplaceSor",
+  "version": "0.0.1",
+  "description": "Replaces any pornographic words for people who wants to quit pornography",
+  "author": "Oluwademilade Abatan",
+  "content_scripts":[
+    {
+      "matches" : ["*://*/*"],
+      "js" : ["content.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
